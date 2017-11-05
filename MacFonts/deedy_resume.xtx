@@ -161,16 +161,24 @@ Waarta \textbullet{} Geany
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Flipkart}
-\descript{ Software Engineer, Cloud Platform }
-\location{July 2015 - Present | Bengaluru, India}
+
+\runsubsection{Carousell}
+\descript{ Software Engineer, Backend Engineering }
+\location{August 2017 - Present | Singapore}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Built a command line provisioning tool for instantiating and destroying the servers by specifying the OS image id etc. Wrote it in \textbf{Go}.
-\item Wrote \textbf{Shell} scripts to automate the non functional regression aspects of the load balancer service. Used \textbf{Apache benchmark}, \textbf{Locust} as the load generation tools.
+\item Helping develop the Ads platform for serving ads on the application. Developing it in \textbf{Go}. 
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Flipkart}
+\descript{ Software Engineer (SDE 2), Cloud Platform }
+\location{July 2015 - August 2017 | Bengaluru, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
 \item Designed and implemented a virtual testing framework for our load balancer service, by making a mock of the entire data center. Used \textbf{MiniNExt} library for emulating the network switches, protocols etc. The framework was built in \textbf{Python}.
 \item Designed and implemented the Health Check Service component of the Elastic Load Balancer, used to report the health state of hosts in the data center. Implemented it in \textbf{Go} 
-\item Developed a single point dashboard view of various metrics,graph of the Elastic Load Balancer, using \textbf{AngularJS} library of \textbf{Javascript}.
 \end{tightemize}
 \sectionsep
 
