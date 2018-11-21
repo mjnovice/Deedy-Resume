@@ -1,0 +1,267 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !TEX program = XeLaTeX
+
+\documentclass[]{deedy-resume}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Mayank}{Jha}{ \urlstyle{same} +65 9868 4081 | \href{mailto:mayank25080562@gmail.com}{mayank25080562@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.30\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection[National Institute of Technology]{National Institute \\ of Technology}
+\descript{B.Tech in Computer Science and Engineering}
+\location{July 2015 | Durgapur, India}
+First Class, Distinction \\
+\location{ Cum. GPA: 8.48 / 10.00  }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook:// \href{https://www.facebook.com/mayank.jha.71}{\bf mayank.jha.71} \\
+Github:// \href{https://github.com/mjnovice}{\bf mjnovice} \\
+LinkedIn://  \href{https://www.linkedin.com/in/mayank-jha-a895a533}{\bf mayank-jha-a895a533} \\
+Twitter://  \href{https://twitter.com/mjnovice}{\bf @mjnovice} \\
+Quora://  \href{https://www.quora.com/Mayank-Jha-1}{\bf Mayank-Jha-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\section{Coursework}
+
+\subsection{Undergraduate}
+Data Structures and Algorithms \\
+Computer Networking + Practicals\\
+Computer Architecture \\
+DBMS + Practicals \\
+Distributed Systems \\
+Software Engineering + Practicals \\
+Operating Systems \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\section{Skills}
+\subsection{Programming}
+\location{Fairly skilled:}
+Golang \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
+C \textbullet{} C++ \textbullet{} CSS \textbullet{} HTML \textbullet{} MySQL \\
+Django \textbullet{} AngularJS \\ 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\location{Familiar:}
+Java \textbullet{} PHP  \textbullet{} Android \textbullet{} PostGreSQL \\ 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\subsection{Technologies}
+\location{Fairly skilled:}
+Linux \textbullet{} Redis \textbullet{} HAProxy \textbullet{} Nginx \\
+Locust \textbullet{} Git \textbullet{} Zookeeper \\
+\sectionsep
+
+\section{Open Source Contributions}
+\subsection{KDE}
+Konversation \textbullet{} Trojita \textbullet{} Telepathy\\
+Kate \\
+\subsection{Misc}
+Waarta \textbullet{} Geany
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Carousell}
+\descript{ Software Engineer, Backend Engineering }
+\location{August 2017 - Present | Singapore}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Built the Ads platform for serving advertisements on the application. Developing it in \textbf{Go}.
+\item Worked closely with the product, saw 2.5x growth of the team in a span of 3 months.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Flipkart}
+\descript{ Software Engineer (SDE 2), Cloud Platform }
+\location{July 2015 - August 2017 | Bengaluru, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed and implemented a virtual testing framework for our load balancer service, by making a mock of the entire data center. Used \textbf{MiniNExt} library for emulating the network switches, protocols like BGP etc. The framework was built in \textbf{Python}. It enabled the developers to locally test the service on a VM, saving 5x time spent in testing and validation. Made the framework generic to enable taking network topology as input fed from a config file and generate the environment. It involved using a library wrapped around a Software Defined Network, through the Open Flow protocol.
+\vspace{\topsep} 
+\item Designed and implemented the Health Check Service component of the Elastic Load Balancer, used to report the health state of hosts (~1 million) in the data center. Implemented it in \textbf{Go}. The health check service worked in a decentralized cluster setup, with a health check node in every major zone. The health status of a node would be determined by a majority consensus among the health checker nodes. A leader among the health checker would decide about the final health status of the node. The leader would be chosen using a Leader Election Recipe relying on \textbf{Zookeeper}.
+\vspace{\topsep} 
+\item Created an automated deployment tool for conversion of a baremetal to a Load Balancer Instance by installation the OS, and installing necessary packages. The tool enabled one to smoothly do operations like provisioning, destruction, allocation etc. from a cli interface rather than making bulky api calls.
+ \vspace{\topsep} 
+\item Created NFR Benchmarking toolkit using popular load testing technologies like \textbf{wrk}, \textbf{locust}, \textbf{ab}. Allowed us to detect bottlenecks in our system, and scale them appropriately.
+\end{tightemize}
+\sectionsep
+
+\section{Final Year University Thesis}
+\runsubsection{National Institute of Technology, Durgapur}
+\descript{March 2015 - April 2015 | Durgapur, India}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Worked on a PoC project to demonstrate the efficiency of code-offloading approach to reduce the consumption of battery in modern-day mobile applications. Created a game application on the Android framework, \hyperref[game]{https://github.com/mjnovice/aapchoo}. Enabled testing of a ILP(Integer Linear Programming) solution for the same. I did this under the mentorship of Professor Parag Guhathakurta.
+\end{tightemize}
+\sectionsep
+\end{minipage}
+\newpage
+
+\begin{minipage}[t]{0.30\textwidth} 
+\section{Extracurricular activities}
+Convener, Maths And Tech Club, NIT Durgapur\\
+Technical Head, GNU/Linux Users Group, NIT Durgapur\\
+Represented College at ACM/ICPC Regionals 2012\\
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+\section{Internships}
+
+\runsubsection{Google}
+\descript{Summer of Code Intern }
+\location{May 2014 – August 2014 | Remote}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Worked with the Fedora Project, to build a cached Bug tracking system, called Bugspad. Used \textbf{Redis} as the cache, and \textbf{Go} as the framework. Worked on making the system scalable by doing stress tests on the same. \hyperref[reference]{https://fedoramagazine.org/5tftw-2014-07-01/}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{GetMeAShop}
+\descript{Python/Django Hacker }
+\location{May 2014 – August 2014 | Remote}
+\begin{tightemize}
+\item Made a B2B portal for sellers to list their products simultaneously on multiple e-commerce platforms(Amazon, Flipkart, Snapdeal etc.) using \textbf{Haystack}, \textbf{Solr}, \textbf{Django}. 
+\item Implemented a price crawler for various products on Amazon, Flipkart and Snapdeal using \textbf{Scrapy} library in \textbf{Python}. This was used by the price-comparision engine used by the core-product of setting up online stores for small scale businesses.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Ashnik Pte Ltd}
+\descript{Winter Intern }
+\location{December 2013 – January 2014 | Remote}
+\begin{tightemize}
+\item Designed a UI for a database monitoring system, for a PostGreSQL system. This was done in \textbf{Django}, and had to use RRD for the graphing tool.
+\end{tightemize}
+\sectionsep
+
+
+
+\runsubsection{Google}
+\descript{Summer of Code Intern }
+\location{May 2013 – September 2013 | Remote}
+\begin{tightemize}
+\item Worked with Ankur India, to make a tool for the judging the aesthetic quality of fonts for Indic scripts like Devanagri, Bengali, Gujarati, Telugu etc. It compared with a set of standards and give scores on various parameters. Acheived this using the \textbf{Python} API bindings of \textbf{FontForge}. The main motivation was to reduce the dearth of good quality Indic fonts.
+\end{tightemize}
+\sectionsep
+
+\section{Hobby Projects}
+
+
+\runsubsection{MJLANG}
+\descript{esoteric programming language}
+\begin{tightemize}
+\item This was an attempt to write an esoteric programming language wherein the programs would be the song lyrics of Michael Jackson. Initially it was just words of his songs, modelled around another Turing complete esoteric language \textbf{brainfuck}. Also got featured in a blog, about computational creativity \hyperref[link]{http://blog.venturesity.com/code-word-play}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{FreePL}
+\descript{online game about Fantasy Cricket}
+\begin{tightemize}
+\item Developed this for the College fest Mukti, to play the fantasy league of cricket game by making teams. 
+\end{tightemize}
+\sectionsep
+\end{minipage}
+\end{document}  \documentclass[]{article}
