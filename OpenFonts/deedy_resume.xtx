@@ -83,9 +83,10 @@
 
 \section{Education} 
 
-\subsection[University of Massachussetts, Amherst]
-\descript{MS in Computer Science}
-\descript{Focus on Distributed Systems and AI}
+\subsection[University of Massachussetts, Amherst]{University of \\ Massachussets, Amherst}
+\descript{MS in Computer Science \\ 
+Focus on Distributed Systems and AI
+}
 \location{August 2019 - Current | Amherst, MA, USA}
 \sectionsep
 
