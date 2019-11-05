@@ -202,9 +202,9 @@ Developed it from scratch in \textbf{Go}.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Google}
-\descript{Summer of Code Intern }
-\location{May 2013 – September 2013 | Remote}
+\runsubsection{University of Massachussetts, Amherst}
+\descript{Neural Networks, Prof. Erik Miller }
+\location{September 2019 - Present}
 \begin{tightemize}
 \item Working to build a hybrid music recommender for humans, which tackles the cold start problem and aims at beating collaborative filtering solely based on the content. Harnessed rich segmented music data using the \textbf{MSAF} library on the Million Song Dataset compared to timbre, loudness and pitch segmented data, improving over a normal deep content based music recommender.
 \end{tightemize}
