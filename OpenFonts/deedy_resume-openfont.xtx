@@ -206,7 +206,7 @@ Developed it from scratch in \textbf{Go}.
 \descript{Summer of Code Intern }
 \location{May 2013 – September 2013 | Remote}
 \begin{tightemize}
-\item Worked with Ankur India, to make a tool for the judging the aesthetic quality of fonts for Indic scripts like Devanagri, Bengali, Gujarati, Telugu etc. It compared with a set of standards and give scores on various parameters. Acheived this using the \textbf{Python} API bindings of \textbf{FontForge}.  
+\item Working to build a hybrid music recommender for humans, which tackles the cold start problem and aims at beating collaborative filtering solely based on the content. Harnessed rich segmented music data using the \textbf{MSAF} library on the Million Song Dataset compared to timbre, loudness and pitch segmented data, improving over a normal deep content based music recommender.
 \end{tightemize}
 \sectionsep
 
