@@ -180,7 +180,7 @@ Developed it from scratch in \textbf{Go}.
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Designed and implemented a virtual testing framework for our load balancer service, by making a mock of the entire data center. Used \textbf{MiniNExt} library for emulating the network switches, protocols etc. The framework was built in \textbf{Python}.
-\item Designed and implemented the Health Check Service component of the Elastic Load Balancer, used to report the health state of hosts in the data center. Implemented it in \textbf{Go} 
+\item Designed and implemented the Health Check Service in \textbf{Go} for the Software load balancer
 \end{tightemize}
 \sectionsep
 
@@ -197,8 +197,6 @@ Developed it from scratch in \textbf{Go}.
 \location{May 2014 – August 2014 | Remote}
 \begin{tightemize}
 \item Made a B2B portal for sellers to list their products simultaneously on multiple e-commerce platforms(Amazon, Flipkart, Snapdeal etc.) using \textbf{Haystack}, \textbf{Solr}, \textbf{Django}.
-\item Implemented a price crawler for various products on Amazon, Flipkart and Snapdeal using \textbf{Scrapy} library in \textbf{Python}. 
-\item Made an online test taking application for various subjects like Maths/Physics/Chemistry etc. using \textbf{Django}
 \end{tightemize}
 \sectionsep
 
@@ -209,6 +207,16 @@ Developed it from scratch in \textbf{Go}.
 \item Working to build a hybrid music recommender for humans, which tackles the cold start problem and aims at beating collaborative filtering solely based on the content. Harnessed rich segmented music data using the \textbf{MSAF} library on the Million Song Dataset compared to timbre, loudness and pitch segmented data, improving over a normal deep content based music recommender.
 \end{tightemize}
 \sectionsep
+
+\runsubsection{University of Massachussetts, Amherst}
+\descript{Systems Independent study, Prof. Prashant Shenoy }
+\location{September 2019 - Present}
+\begin{tightemize}
+\item  
+Studying serverless computing as an alternative to modern day cloud needs and studying the effect of serverless computing on edge platforms. Deployed an open source serverless framework on a jetson nano/raspberry pi and rock64 clusters. Conducted various experiments to make serverless computing possible in mobile phones.
+\end{tightemize}
+\sectionsep
+
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
